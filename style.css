@@ -1,0 +1,146 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Quicksand, sans-serif;
+}
+
+.logo {
+	font-family: Quicksand, sans-serif;
+	width: 100px;
+	height: 50px;
+	padding: 2px 4px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: relative;
+	margin-left: 50px;
+}
+.logo::before {
+	content: "";
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: -52px;
+	top: -0.5px;
+	background-image: url(images/logo.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+}
+.logo h1 {
+	line-height: 1em;
+	font-size: 1.5em;
+}
+.logo p {
+	color: #ccc;
+	font-weight: 300;
+	font-size: 0.8em;
+}
+
+.hero-container {
+	border: 1px solid black;
+	width: 100%;
+	height: 70vh;
+	padding: 4.165%;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0,0.5)), url(images/hero-bg.jpg);
+	background-size: cover;
+	bacground-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.hero-text {
+	height: 65%;
+}
+.hero-text p {
+	color: #fff;
+	align-content: center;
+	font-size: 1.8em;
+	font-weight: 600;
+	width: 95%;
+}
+.hero-text label {
+	background-color: #000;
+	color: #fff;
+	padding: 12px 25px;
+	line-height: 4.2em;
+	border-radius: 12px;
+	position: relative;
+}
+.hero-text label::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: rgba(200, 200, 200, 0.3);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-radius: 12px;
+	transition: 0.2s;
+	transform: scale(0);
+}
+.hero-text label:hover {
+	cursor: pointer;
+	color: #ccc;
+}
+.hero-text label:hover::before {
+	transform: scale(1.0);
+}
+
+.gallery-container {
+	width: 91.63%;
+	height: auto;
+	margin: auto;
+	min-height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 12px 0 0 0;
+}
+.gallery-container h2 {
+	font-size: 1.8em;
+	margin-bottom: 12px;
+}
+.column-container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+}
+.column {
+	width: 47.90%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+.column-div img {
+	width: 100%;
+	height: auto;
+}
+.column .column-div {
+	width: 100%;
+	margin-bottom: 8.33%;
+	position: relative;
+}
+.column .column-div .delete-image {
+	width: 30px;
+	height: 30px;
+	padding: 3px;
+	border-radius: 50%;
+	background-image: url(images/delete.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	right: 6px;
+	bottom: 8px;
+}
+
+input {
+	display: none;
+}

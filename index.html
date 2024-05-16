@@ -4,23 +4,32 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Personal Online Gallery</title>
-	<style type="text/css">
-		img {
-			width: 20%;
-			height: auto;
-		}
-	</style>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="hero-container">
-		<h1>Personal Online Gallery</h1>
-		<p>This is your online space. Upload your favourite
-		photos and fill your gallery with memories.</p>
-		<input type="file" accept="image/jpg, image/jpeg, image/png" id="input">
-
-	</div>
-	<div class="image-container" id="image-container">
+		<div class="logo">
+			<h1>UpPhoto</h1>
+			<p>Online Gallery</p>
+		</div>
+		<div class="hero-text">
+			<p>Your online space for your best shots. Upload your favourite photos and fill your gallery with memories.</p>
+			<label for="input">Upload Photo</label>
+			<input type="file" accept="image/jpg, image/jpeg, image/png" id="input">
+		</div>
 		
+	</div>
+	<div class="gallery-container" id="gallery-container">
+		<h2>Photos</h2>
+		<div class="column-container">
+			<div class="column" id="even-column">
+			</div>
+			<div class="column" id="odd-column">		
+			</div>			
+		</div>
 	</div>
 
 	<script src="script.js"></script>
