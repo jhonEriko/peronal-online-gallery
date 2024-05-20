@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Personal Online Gallery</title>
+	<title>Upphoto | Photo Gallery</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,10 +13,10 @@
 	<div class="hero-container">
 		<div class="logo">
 			<h1>UpPhoto</h1>
-			<p>Online Gallery</p>
+			<p>Photo Gallery</p>
 		</div>
 		<div class="hero-text">
-			<p>Your online space for your best shots. Upload your favourite photos and fill your gallery with memories.</p>
+			<p>You can upload photos from your device and it will be added in the gallery.</p>
 			<label for="input">Upload Photo</label>
 			<input type="file" accept="image/jpg, image/jpeg, image/png" id="input">
 		</div>
@@ -24,21 +24,36 @@
 	</div>
 	<div class="gallery-container" id="gallery-container">
 		<h2>Photos</h2>
-		<div class="column-container">
+		<div class="column-container" id="column-container">
 			<div class="column" id="even-column">
+				<div class="column-div">
+					<img src="images/sample images/a.jpg">
+				</div><div class="column-div">
+					<img src="images/sample images/b.jpg">
+				</div><div class="column-div">
+					<img src="images/sample images/c.jpg">
+				</div>
 			</div>
-			<div class="column" id="odd-column">		
-			</div>		
-
+			<div class="column" id="odd-column">
+				<div class="column-div">
+					<img src="images/sample images/d.jpg">
+				</div><div class="column-div">
+					<img src="images/sample images/e.jpg">
+				</div><div class="column-div">
+					<img src="images/sample images/f.jpg">
+				</div>	
+			</div>	
+			<div class="column" id="third-column">
+				<div class="column-div">
+					<img src="images/sample images/g.jpg">
+				</div><div class="column-div">
+					<img src="images/sample images/h.jpg">
+				</div><div class="column-div">
+					<img src="images/sample images/i.jpg">
+				</div>	
+			</div>
 		</div>
 	</div>
-	<div class="view-image">
-		<div class="image-holder">
-			<span>&#10060</span>
-			<span class="delete">Delete</span>
-			<img src="images/hero-bg.jpg">
-		</div>
-	</div>	
 	<script src="script.js"></script>
 </body>
 </html>
